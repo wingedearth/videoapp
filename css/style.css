@@ -1,0 +1,89 @@
+
+p {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Open Sans";
+}
+
+#player {
+  background-color: black;
+  margin: 0px auto;
+  text-align: center;
+  width: 60%;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+video {
+  position: relative;
+  width: 100%;
+  allowfullscreen: true;
+}
+
+div#videoControls {
+  background: #333;
+  font-family: "Trebuchet MS";
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  color: #CCC;
+}
+
+input#seekslider {
+  width: 35%;
+}
+
+input#volumeslider {
+  width: 10%;
+}
+
+input[type='range'] {
+  -webkit-appearance: none !important;
+  background: #000;
+  border: #666 1px solid;
+  height: 4px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background: #FFF;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  cursor:pointer;
+  opacity: 0.7;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+  opacity: 1;
+}
+
+button#playpausebtn {
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+button#playpausebtn:hover {
+  opacity: 1;
+}
+
+button#mutebtn {
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 0.7;
+}
+
+button#mutebtn:hover {
+  opacity: 1;
+}
+
+button#fullscreenbtn {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+button#fullscreenbtn:hover {
+  opacity: 1;
+}

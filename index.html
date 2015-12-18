@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video App</title>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/threejs/r69/three.min.js"></script>
+</head>
+<body>
+<p>Andy's Video Player</p>
+<div id="player">
+  <video id="myVideo">
+  <!-- <source src="videos/stock1.mp4"> -->
+   <source src="https://archive.org/download/ItsAWonderfulLife_201401/It's%20a%20Wonderful%20Life.mp4">
+  <!-- <source src="http://archive.org/download/CordkillersEp100/CordkillersEp100.mp4"> -->
+  </video>
+  <div id="videoControls">
+    <button id="playpausebtn">pause</button>
+    <input id="seekslider" type="range" min="0" max="100" value="0" step="1">
+    <span id="currentTimeText">00:00</span> /
+    <span id="durationTimeText"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button id="mutebtn">mute</button>
+    <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+    <button id="fullscreenbtn">[&nbsp;&nbsp;&nbsp;]</button>
+  </div> <!-- videoControls  -->
+</div> <!-- player -->
+
+  <script type="text/javascript" src="js/videohandler.js"></script>
+</body>
+</html>
+
+
+
